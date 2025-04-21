@@ -92,5 +92,5 @@ pip install tensorflow tensorflowjs matplotlib seaborn scikit-image pandas openc
 ---
 
 **Author:** *Idha Kurniawati*   
-**Dataset Credit:** Misrak Ahmed (Kaggle)
+**Dataset Credit:** M Israk Ahmed (Kaggle)
 
