@@ -1,22 +1,24 @@
-# Proyek Klasifikasi Gambar - Vegetable Image Classification with MobileNetV2
+# Proyek Klasifikasi Gambar - Vegetable Image Classification with MobileNetV2 🥬🥦🫛✨
 
 This project is a deep learning-based image classification pipeline built using TensorFlow and Keras, trained to classify 15 types of vegetables using transfer learning with MobileNetV2. The dataset is obtained from Kaggle and is used to demonstrate a high-accuracy classification model.
 
-## Dataset
+## 📁 Dataset
 
 The dataset used in this project is:
 **[Vegetable Image Dataset](https://www.kaggle.com/datasets/misrakahmed/vegetable-image-dataset)**
 
-It contains images of 15 different vegetables and is split into three folders:
-- `train/`
-- `validation/`
-- `test/`
+The original `train`, `validation`, and `test` folders are combined into one directory called `dataset/` for re-splitting.
 
-## Dependencies
-
-```bash
-pip install tensorflow tensorflowjs matplotlib seaborn scikit-image pandas opencv-python tqdm
+```python
+# Merge datasets into one
+combined_dir = 'dataset'
 ```
+
+Then, the dataset is split into:
+- 70% for training
+- 25% for validation
+- 15% for testing
+
 
 ## 🚀 Steps Performed
 
@@ -62,12 +64,12 @@ pip install tensorflow tensorflowjs matplotlib seaborn scikit-image pandas openc
 - Load SavedModel for inference
 - Sample prediction script provided for individual test image
 
-## Results
+## 📊 Results
 - Achieved **100% test accuracy**
 - High precision, recall, and F1-score across all classes
 - Minimal overfitting due to transfer learning and augmentation
 
-## Sample Classes
+## 🥦 Sample Classes 
 - Bean
 - Bitter Gourd
 - Bottle Gourd
@@ -84,7 +86,7 @@ pip install tensorflow tensorflowjs matplotlib seaborn scikit-image pandas openc
 - Radish
 - Tomato
 
-##  Notes
+## 📌 Notes
 - Ensure `kaggle.json` is uploaded and placed correctly before running the script
 - Trained on Google Colab with T4 GPU
 - Model is ready for deployment on web or mobile apps using TFLite or TFJS
