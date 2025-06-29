@@ -1,4 +1,4 @@
-# Proyek Klasifikasi Gambar - Vegetable Image Classification with MobileNetV2 🥬🥦🫛✨
+# Vegetable Image Classification with MobileNetV2 🥬🥦🫛✨
 
 This project is a deep learning-based image classification pipeline built using TensorFlow and Keras, trained to classify 15 types of vegetables using transfer learning with MobileNetV2. The dataset is obtained from Kaggle and is used to demonstrate a high-accuracy classification model.
 
